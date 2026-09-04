@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>P1-Practica  1  Mi Presentación</title>
+</head>
+<body>
+
+<h1>Mi Presentacion</h1>
+<p>Nombre: Zulay Valentina Castro Chairez.</p>
+<p>Edad: 16</p>
+<p>Escuela: CBTIS 128</p>
+<p>Grupo: J</p>
+<p>Color favorito: Azul</p>
+<p>Pasatiempo: Dibujar</p>
+<br></br>
+<footer> 
+	<p> Castro Chairez Zulay Valentina | 5°J | Programacion | 0822 | CBTIS 128 </p>
+</footer>
+</body>
+</html>
