@@ -26,7 +26,7 @@
         }
 
         /* =========================================
-           ENCABEZADO (Bandera de Puros Colores - Optimizado)
+           ENCABEZADO (Bandera de Puros Colores)
            ========================================= */
         .header-top {
             height: 40px;
@@ -63,7 +63,7 @@
             min-height: 50px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.3);
             z-index: 100;
-            flex-wrap: wrap;
+            flex-wrap: wrap; 
         }
 
         nav a {
@@ -76,6 +76,7 @@
             cursor: pointer;
             border-right: 1px solid rgba(255,255,255,0.3);
             transition: background-color 0.2s;
+            flex-grow: 1; 
         }
 
         nav a:first-child {
@@ -99,7 +100,7 @@
 
         .content-area {
             flex: 1;
-            padding: 20px 40px; 
+            padding: 30px 40px; 
             display: flex;
             flex-direction: column;
             max-width: 1300px; 
@@ -125,14 +126,14 @@
         }
 
         /* =========================================
-           DISEÑO DE LA PORTADA (Acomodo lado a lado)
+           DISEÑO DE LA PORTADA
            ========================================= */
         .portada-wrapper {
             display: flex;
-            flex-direction: row; /* Coloca el texto a la izq y la imagen a la der */
+            flex-direction: row; 
             align-items: center;
             justify-content: center;
-            gap: 5%; /* Espacio entre el texto y la imagen */
+            gap: 5%; 
             flex: 1; 
             width: 100%;
         }
@@ -140,12 +141,12 @@
         .textos-portada {
             display: flex;
             flex-direction: column;
-            text-align: left; /* Alineado a la izquierda como en la presentación */
+            text-align: left; 
         }
 
         .titulo-mexico {
             font-family: 'Arial Black', Impact, sans-serif;
-            font-size: 8vw; /* Se adapta al ancho de la pantalla */
+            font-size: 8vw; 
             margin: 0;
             line-height: 1;
             letter-spacing: 2px;
@@ -154,7 +155,7 @@
 
         .titulo-secundario {
             font-family: 'Arial Black', Impact, sans-serif;
-            font-size: 3.5vw; /* Se adapta al ancho de la pantalla */
+            font-size: 3.5vw; 
             margin: 10px 0 0 0;
             line-height: 1.1;
             letter-spacing: 1px;
@@ -163,8 +164,8 @@
 
         .contenedor-bandera img {
             border: 12px solid var(--blanco);
-            max-width: 40vw; /* Máximo 40% del ancho de la pantalla */
-            max-height: 55vh; /* Evita que la imagen se salga hacia abajo */
+            max-width: 40vw; 
+            max-height: 55vh; 
             box-shadow: 0 10px 20px rgba(0,0,0,0.4);
             object-fit: cover;
             display: block;
@@ -173,10 +174,9 @@
         /* =========================================
            DISEÑO DE TEXTOS (OTRAS SECCIONES)
            ========================================= */
-        
         .vista h2:not(.titulo-secundario) {
             font-family: 'Impact', 'Arial Black', sans-serif;
-            font-size: 5rem; /* Letra grande pero que cabe en pantalla */
+            font-size: 5rem; 
             text-align: center;
             margin: 0 0 20px 0; 
             font-weight: normal;
@@ -188,7 +188,7 @@
 
         .vista p, .vista ul li {
             font-family: Arial, sans-serif;
-            font-size: 1.5rem; /* Tamaño legible sin ocupar toda la pantalla */
+            font-size: 1.5rem; 
             line-height: 1.6;
             background-color: transparent;
             padding: 0;
@@ -221,9 +221,6 @@
             color: var(--blanco);
         }
 
-        /* =========================================
-           PIE DE PÁGINA
-           ========================================= */
         footer {
             text-align: center;
             padding: 15px;
@@ -232,6 +229,66 @@
             margin-top: auto;
             width: 100%;
             border-top: 2px solid rgba(255,255,255,0.2);
+        }
+
+        /* =========================================
+           RESPONSIVE DESIGN (PARA CELULARES)
+           ========================================= */
+        @media (max-width: 800px) {
+            .header-middle {
+                font-size: 0.8rem;
+                letter-spacing: 1px;
+            }
+            
+            .escudo {
+                height: 25px;
+                margin: 0 5px;
+            }
+
+            nav a {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+
+            .content-area {
+                padding: 20px 15px;
+            }
+
+            .portada-wrapper {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .textos-portada {
+                text-align: center;
+                align-items: center;
+            }
+
+            .titulo-mexico {
+                font-size: 4.5rem;
+            }
+
+            .titulo-secundario {
+                font-size: 1.8rem;
+            }
+
+            .contenedor-bandera img {
+                max-width: 85vw;
+                border-width: 8px;
+            }
+
+            .vista h2:not(.titulo-secundario) {
+                font-size: 3rem;
+            }
+
+            .vista p, .vista ul li {
+                font-size: 1.1rem;
+            }
+
+            .vista ul li strong {
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
