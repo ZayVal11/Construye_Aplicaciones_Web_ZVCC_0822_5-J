@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>México | Septiembre Mes Patrio</title>
+    <title>México | Septiembre Mes Patrio</title> <!-- Ttitulo de la pagina -->
     <style>
-        /* Paleta de colores exactos de la bandera */
+        /* Paleta de colores exactos de la bandera */ 
         :root {
-            --verde-bandera: #006847;
+            --verde-bandera: #006847; 
             --blanco: #ffffff;
             --rojo-bandera: #CE1126;
             --texto-oscuro: #000000;
         }
-
+        /* edicion de colores y letra en el documento */
         body, html {
             margin: 0;
             padding: 0;
@@ -28,6 +28,7 @@
         /* =========================================
            ENCABEZADO (Bandera de Puros Colores)
            ========================================= */
+        /* Informacion de la parte de arriba de la pagina con la forma de la bandera, encabezado y el escudo */
         .header-top {
             height: 40px;
             background-color: var(--verde-bandera);
@@ -108,7 +109,7 @@
             width: 100%;
             box-sizing: border-box;
         }
-
+        /* Hace que sea animado cuando cambia de seccion */ 
         .vista {
             display: none;
             flex: 1;
@@ -128,6 +129,7 @@
         /* =========================================
            DISEÑO DE LA PORTADA
            ========================================= */
+        /* Diseño de textos, color, tamaño y la imagen de la bandera */
         .portada-wrapper {
             display: flex;
             flex-direction: row; 
@@ -174,6 +176,7 @@
         /* =========================================
            DISEÑO DE TEXTOS (OTRAS SECCIONES)
            ========================================= */
+        /* Diseño de las letras, tamaño color, posicion etc */
         .vista h2:not(.titulo-secundario) {
             font-family: 'Impact', 'Arial Black', sans-serif;
             font-size: 5rem; 
@@ -231,64 +234,6 @@
             border-top: 2px solid rgba(255,255,255,0.2);
         }
 
-        /* =========================================
-           RESPONSIVE DESIGN (PARA CELULARES)
-           ========================================= */
-        @media (max-width: 800px) {
-            .header-middle {
-                font-size: 0.8rem;
-                letter-spacing: 1px;
-            }
-            
-            .escudo {
-                height: 25px;
-                margin: 0 5px;
-            }
-
-            nav a {
-                padding: 10px;
-                font-size: 0.9rem;
-            }
-
-            .content-area {
-                padding: 20px 15px;
-            }
-
-            .portada-wrapper {
-                flex-direction: column;
-                text-align: center;
-                gap: 20px;
-            }
-
-            .textos-portada {
-                text-align: center;
-                align-items: center;
-            }
-
-            .titulo-mexico {
-                font-size: 4.5rem;
-            }
-
-            .titulo-secundario {
-                font-size: 1.8rem;
-            }
-
-            .contenedor-bandera img {
-                max-width: 85vw;
-                border-width: 8px;
-            }
-
-            .vista h2:not(.titulo-secundario) {
-                font-size: 3rem;
-            }
-
-            .vista p, .vista ul li {
-                font-size: 1.1rem;
-            }
-
-            .vista ul li strong {
-                font-size: 1.2rem;
-            }
         }
     </style>
 </head>
@@ -300,6 +245,7 @@
     <div class="header-top"></div>
     
     <div class="header-middle">
+        <!-- Imagen de la bandera -->
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Coat_of_arms_of_Mexico.svg/500px-Coat_of_arms_of_Mexico.svg.png" alt="Escudo" class="escudo">
         <span>MÉXICO | SEPTIEMBRE MES PATRIO</span>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Coat_of_arms_of_Mexico.svg/500px-Coat_of_arms_of_Mexico.svg.png" alt="Escudo" class="escudo">
@@ -339,8 +285,10 @@
             </div>
 
             <!-- VISTA 3: FECHAS -->
+            <!-- div es para agrupar elementos -->
             <div id="vista-fechas" class="vista">
                 <h2>FECHAS</h2>
+                <!-- ul crea una lista y li los define dentro de esta -->
                 <ul>
                     <li><strong>1 de septiembre:</strong> Apertura del primer periodo de sesiones ordinarias del Congreso de la Unión e Informe Presidencial.</li>
                     <li><strong>8 de septiembre:</strong> Natalicio de Josefa Ortiz de Domínguez (1768), heroína de la Independencia ("La Corregidora").</li>
