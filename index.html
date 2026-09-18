@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> <!-- Caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tamaño adaptable -->
     <title>México | Septiembre Mes Patrio</title> <!-- Ttitulo de la pagina -->
     <style>
         /* Paleta de colores exactos de la bandera */ 
-        :root {
+        :root { /* Elemento para almacenar, en este caso los colores*/
             --verde-bandera: #006847; 
             --blanco: #ffffff;
             --rojo-bandera: #CE1126;
@@ -15,20 +15,20 @@
         /* edicion de colores y letra en el documento */
         body, html {
             margin: 0;
-            padding: 0; /*Relleno*/
-            font-family: 'Segoe UI', Arial, sans-serif;
+            padding: 0; /*Relleno margen de inicio*/
+            font-family: 'Segoe UI', Arial, sans-serif; /* Tipografia */
             background-color: var(--verde-bandera); /*Fondo*/
-            color: var(--blanco);
-            height: 100%;
-            overflow: hidden;
-            display: flex;
+            color: var(--blanco); /* Color del texto */
+            height: 100%; /*Espacio opcupado dela pagina*/
+            overflow: hidden; /*Barras de navegador*/
+            display: flex; /*Alinea*/
             flex-direction: column;
         }
 
         /* =========================================
            ENCABEZADO (Bandera de Puros Colores)
            ========================================= */
-        /* Informacion de la parte de arriba de la pagina con la forma de la bandera, encabezado y el escudo */
+        /* Informacion de la parte de arriba de la pagina con la forma de la bandera, encabezado, el escudo y franjas */
         .header-top {
             height: 40px;
             background-color: var(--verde-bandera);
