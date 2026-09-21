@@ -34,7 +34,7 @@
             background-color: var(--verde-bandera);
             width: 100%;
         }
-
+        /* Estilos para la franja blanca central del encabezado */
         .header-middle {
             height: 50px;
             background-color: var(--blanco);
@@ -47,14 +47,14 @@
             letter-spacing: 3px;
             width: 100%;
         }
-
+        /* Estilos para las imágenes del escudo nacional */
         .escudo {
             height: 35px;
             margin: 0 15px;
             opacity: 0.9; 
             filter: grayscale(100%);
         }
-
+        /* Estilos para la barra de navegación principal (Franja roja) */
         nav {
             background-color: var(--rojo-bandera);
             display: flex;
@@ -66,24 +66,24 @@
             z-index: 100;
             flex-wrap: wrap; 
         }
-
+        /* Estilos generales para los enlaces/botones del menú de navegación */
         nav a {
-            color: var(--blanco);
-            text-decoration: none;
-            font-weight: 800;
-            font-size: 1rem;
-            text-align: center;
-            padding: 15px 25px;
-            cursor: pointer;
-            border-right: 1px solid rgba(255,255,255,0.3);
-            transition: background-color 0.2s;
-            flex-grow: 1; 
+            color: var(--blanco);                           /* Define el color del texto en blanco usando la variable CSS */
+            text-decoration: none;                          /* Quita el subrayado automático que llevan los enlaces por defecto */
+            font-weight: 800;                               /* Aplica un grosor de letra en negrita (muy marcado) */
+            font-size: 1rem;                                /* Define el tamaño de texto estándar (relativo al elemento raíz) */
+            text-align: center;                             /* Centra el texto dentro de su propio contenedor */
+            padding: 15px 25px;                             /* Espaciado interno (15px arriba/abajo, 25px a los lados) para hacer el botón más grande */
+            cursor: pointer;                                /* Cambia la forma del puntero a una manita al pasar sobre el enlace */
+            border-right: 1px solid rgba(255,255,255,0.3);  /* Agrega una línea divisoria blanca semitransparente a la derecha */
+            transition: background-color 0.2s;              /* Hace que el cambio de color al pasar el cursor dure 0.2 segundos (suave) */
+            flex-grow: 1;                                   /* Permite que todos los botones se expandan equitativamente para ocupar todo el ancho */
         }
-
+        /* Estilo  para el primer enlace del menú */
         nav a:first-child {
             border-left: 1px solid rgba(255,255,255,0.3);
         }
-
+        /* Estilos para cuando se pasa el cursor sobre el botón (hover) o cuando está seleccionado (.activo) */
         nav a:hover, nav a.activo {
             background-color: rgba(0, 0, 0, 0.15);
         }
@@ -91,6 +91,7 @@
         /* =========================================
            ÁREA DE CONTENIDO PRINCIPAL
            ========================================= */
+        /* Estilos para el contenedor principal que gestiona el desplazamiento */
         .main-container {
             flex: 1;
             display: flex;
@@ -98,7 +99,7 @@
             overflow-y: auto;
             position: relative;
         }
-
+        /* Estilos para el área interna de contenido que delimita el ancho y márgenes */
         .content-area {
             flex: 1;
             padding: 30px 40px; 
@@ -116,12 +117,13 @@
             flex-direction: column;
             animation: fadeIn 0.4s ease-in-out;
         }
-
+        
+        /* Estilo para mostrar la vista actualmente seleccionada */
         .vista.activa {
             display: flex;
         }
         /*Cambia la forma en la que aparece el texto*/
-        @keyframes fadeIn {
+        @keyframes fadeIn { /*Movimiento y opacidad de pixeles para el movimiento*/
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
         }
