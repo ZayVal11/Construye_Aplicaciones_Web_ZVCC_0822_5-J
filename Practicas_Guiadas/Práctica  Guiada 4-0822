@@ -1,0 +1,16 @@
+<!DOCTYPE html> <!-- Identificador de html -->
+<html lang="es"><!-- Lenguaje -->
+	<head><!-- definicion de metadatos -->
+		<meta charset="UTF-8"><!-- Caracteres -->
+		<meta name="viewport" "content=width=device-width, initial-scale=1.0"><!-- Dimensiones de pantalla -->
+		<title>Pagina WEB</title><!-- Titulo del documento -->
+	</head><!-- Fin de metadatos -->
+	<body text="orange"> <!-- Color de texto -->
+		<p><b>Esta es una linea</b>, y a continuacion <b><u>insertamos un salto</u></b> de linea<br><!-- Texto con salto de linea -->
+		Esta es una linea, y <u> a continuacion</u> un salto de linea <br><!-- Texto con salto de linea -->
+		Esta es una linea, y <strong> a continuacion</strong> insertamos un <i> salto de linea</i><br><!-- Texto con resaltado -->
+		<font color="green" size="11px">Esta es una linea</font>, y a continuacion insertamos un <i> salto de linea</i><br><!-- Texto con colores y tamaño -->
+		<font face="Arial">Esta es una</font>linea, y <font color="red">a continuacion</font> insertamos un <i> salto de linea </i><br></p><!-- Texto con tipo de letra y colores -->
+		<p>Este es un parrafo <font color="cyan"> con <u> la letra </u> en <b>diferentes formatos</b></font><!-- parrafo on colores -->
+	</body><!-- Fin del contenido visual -->
+</html> <!-- Castro Chairez Zulay Valentina | 0822 | 5°J | Programacion -->
