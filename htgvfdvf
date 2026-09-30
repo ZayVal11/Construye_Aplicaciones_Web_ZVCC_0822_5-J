@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale="1.0">
+	<title> Horario 5°J </title>
+
+</head>
+<body>
+	<h1><strong>Centro de Bachillerato Tecnico Industrial y de Servicios No.128 </strong></h1>
+	<table border="1">
+		<thead>
+			<th> Hora </th> 
+			<th> Lunes </th> 
+			<th> Martes </th> 
+			<th> Miércoles </th> 
+			<th> Jueves </th> 
+			<th> Viernes </th> 
+		<thead>
+		<tr>
+			<td> 7:00-8:00</td> 
+			<td> </td> 
+			<td> Historia </td> 
+			<td> Administración </td> 
+			<td> Administración </td> 
+			<td> Ingles </td> 
+		<tr>		
+		<tr>
+			<td> 8:00-9:00</td> 
+			<td> </td> 
+			<td> Administración </td> 
+			<td> Historia </td> 
+			<td> Ingles </td> 
+			<td> Historia</td> 
+		<tr>		
+		<tr>
+			<td> 9:00-10:00 </td> 
+			<td> Ingles</td> 
+			<td rowspan="2"> PROG M4S1 </td> 
+			<td> PROG M4S1 </td> 
+			<td rowpan="2"> PROG M4S1 </td> 
+			<td rowspan="2"> PROG M4S1 </td> 
+		<tr>
+		<tr>
+			<td> 10:00-10:50 </td> 
+			<td> Lunes </td> 
+			<td> Martes </td> 
+			<td> Miércoles </td> 
+			<td> Jueves </td> 
+			<td> Viernes </td> 
+		<tr>
