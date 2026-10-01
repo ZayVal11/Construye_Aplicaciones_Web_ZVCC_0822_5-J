@@ -1,95 +1,105 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> Horario 5°J </title>
-</head>
-<body>
-	<h1><strong>Centro de Bachillerato Tecnico Industrial y de Servicios No.128 </strong></h1>
+<!DOCTYPE html> <!-- Define que este documento es un archivo HTML5 -->
+<html lang="es"> <!-- Etiqueta raíz que envuelve todo el código y define el idioma español -->
+<head> <!-- Contiene la información técnica del sitio (metadatos, enlaces, título) que no se ve en la página -->
+	<meta charset="UTF-8"> <!-- Configura la codificación de caracteres para permitir acentos y la letra ñ -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsiva y se adapte a celulares y computadoras -->
+	<title> Horario 5°J </title> <!-- Define el título que aparece en la pestaña del navegador -->
+</head> <!-- Cierre de la sección de cabecera técnica -->
+<body> <!-- Inicia el cuerpo de la página, todo lo que se ponga aquí adentro será visible para el usuario -->
 	
-	<table border="1" cellpadding="6" cellspacing="0" style="width: 100%; text-align: center; font-family: Arial, sans-serif; font-size: 13px; color: black;">
-		<thead>
-			<tr style="background-color: #003366; color: white;">
-				<th> Hora </th> 
-				<th> Lunes </th> 
-				<th> Martes </th> 
-				<th> Miércoles </th> 
-				<th> Jueves </th> 
-				<th> Viernes </th> 
-			</tr>
-		</thead>
-		<tbody>
-			<!-- 7:00-8:00 -->
-			<tr>
-				<td style="font-weight: bold; background-color: #f2f2f2;"> 7:00<br>8:00 </td> 
-				<td> </td> 
-				<td style="background-color: #e6df7c;"> 5° CH 2<br>Juarez<br>AULA 38 </td> 
-				<td style="background-color: #b3bd42;"> 5° Apli. Adm<br>Estrada<br>AULA 38 </td> 
-				<td style="background-color: #b3bd42;"> 5° Apli. Adm<br>Estrada<br>AULA 38 </td> 
-				<td style="background-color: #939633;"> 5° Ingles 5<br>Terrazas<br>AULA 38 </td> 
-			</tr>		
-			<!-- 8:00-9:00 -->
-			<tr>
-				<td style="font-weight: bold; background-color: #f2f2f2;"> 8:00<br>9:00 </td> 
-				<td> </td> 
-				<td style="background-color: #b3bd42;"> 5° Apli. Adm<br>Estrada<br>AULA 38 </td> 
-				<td style="background-color: #e6df7c;"> 5° CH 2<br>Juarez<br>AULA 38 </td> 
-				<td style="background-color: #939633;"> 5° Ingles 5<br>Terrazas<br>AULA 38 </td> 
-				<td style="background-color: #e6df7c;"> 5° CH 2<br>Juarez<br>AULA 38 </td> 
-			</tr>		
-			<!-- 9:00-10:00 -->
-			<tr>
-				<td style="font-weight: bold; background-color: #f2f2f2;"> 9:00<br>10:00 </td> 
-				<td style="background-color: #939633;"> 5° Ingles 5<br>Terrazas<br>AULA 38 </td> 
-				<td style="background-color: #ff7f27;" rowspan="2"> PROG M4S1<br>Meza<br>AULA 38 </td> 
-				<td style="background-color: #ff7f27;"> PROG M4S1<br>Meza<br>AULA 38 </td> 
-				<td style="background-color: #ff7f27;" rowspan="2"> PROG M4S1<br>Meza<br>AULA 38 </td> 
-				<td style="background-color: #ff7f27;" rowspan="2"> PROG M4S1<br>Meza<br>AULA 38 </td> 
-			</tr>
-			<!-- 10:00-10:50 -->
-			<tr>
-				<td style="font-weight: bold; background-color: #f2f2f2;"> 10:00<br>10:50 </td> 
-				<td style="background-color: #aae344;"> 5° CNEyT 5<br>Reyes<br>AULA 38 </td> 
-				<!-- Martes se salta -->
-				<td style="background-color: #939633;"> 5° Ingles 5<br>Terrazas<br>AULA 38 </td> 
-				<!-- Jueves se salta -->
-				<!-- Viernes se salta -->
-			</tr>
+	<h1><strong>Centro de Bachillerato Tecnico Industrial y de Servicios No.128 </strong></h1> <!-- Título principal en negrita grande -->
+	
+	<!-- Inicio de la tabla. Se cambiaron las propiedades antiguas de borde por estilos CSS modernos para garantizar bordes negros rígidos -->
+	<table border="1" cellpadding="6" cellspacing="0" style="width: 100%; text-align: center; font-family: Arial, sans-serif; font-size: 13px; color: black; border-collapse: collapse; border: 2px solid #000000;">
+		<thead> <!-- Agrupa el bloque de filas que servirán como el encabezado superior de la tabla -->
+			<tr style="background-color: #ffffff; border-bottom: 2px solid #000000;"> <!-- Fila del encabezado con fondo blanco y borde inferior negro -->
+				<th style="border: 1px solid #000000;"> Hora </th> <!-- Celda de encabezado (negrita por defecto) con borde negro -->
+				<th style="border: 1px solid #000000;"> Lunes </th> <!-- Celda de encabezado para el día Lunes con borde negro -->
+				<th style="border: 1px solid #000000;"> Martes </th> <!-- Celda de encabezado para el día Martes con borde negro -->
+				<th style="border: 1px solid #000000;"> Miércoles </th> <!-- Celda de encabezado para el día Miércoles con borde negro -->
+				<th style="border: 1px solid #000000;"> Jueves </th> <!-- Celda de encabezado para el día Jueves con borde negro -->
+				<th style="border: 1px solid #000000;"> Viernes </th> <!-- Celda de encabezado para el día Viernes con borde negro -->
+			</tr> <!-- Cierre de la fila del encabezado -->
+		</thead> <!-- Cierre del grupo del encabezado -->
+		
+		<tbody> <!-- Agrupa el bloque de filas que contienen los datos reales y las materias del horario -->
 			
-			<!-- RECESO OCULTO (Línea de separación vacía) -->
-			<tr>
-				<td colspan="6" style="background-color: #ffffff; height: 18px;"> </td>
-			</tr>
+			<!-- Fila del horario: 7:00-8:00 -->
+			<tr> <!-- Inicia la primera fila de clases -->
+				<td style="font-weight: bold; border: 1px solid #000000;"> 7:00<br>8:00 </td> <!-- Celda de la hora con salto de línea (<br>) y borde negro -->
+				<td style="border: 1px solid #000000;"> </td> <!-- Celda vacía (Lunes libre a esta hora) con borde negro -->
+				<td style="background-color: #e6df7c; border: 1px solid #000000;"> 5° CH 2<br>Juarez<br>AULA 38 </td> <!-- Clase del Martes con su color, profesor y aula -->
+				<td style="background-color: #b3bd42; border: 1px solid #000000;"> 5° Apli. Adm<br>Estrada<br>AULA 38 </td> <!-- Clase del Miércoles con su color, profesor y aula -->
+				<td style="background-color: #b3bd42; border: 1px solid #000000;"> 5° Apli. Adm<br>Estrada<br>AULA 38 </td> <!-- Clase del Jueves con su color, profesor y aula -->
+				<td style="background-color: #939633; border: 1px solid #000000;"> 5° Ingles 5<br>Terrazas<br>AULA 38 </td> <!-- Clase del Viernes con su color, profesor y aula -->
+			</tr> <!-- Cierre de la fila de las 7:00-8:00 -->
+			
+			<!-- Fila del horario: 8:00-9:00 -->
+			<tr> <!-- Inicia la segunda fila de clases -->
+				<td style="font-weight: bold; border: 1px solid #000000;"> 8:00<br>9:00 </td> <!-- Celda de la hora con borde negro -->
+				<td style="border: 1px solid #000000;"> </td> <!-- Celda vacía del Lunes con borde negro -->
+				<td style="background-color: #b3bd42; border: 1px solid #000000;"> 5° Apli. Adm<br>Estrada<br>AULA 38 </td> <!-- Clase del Martes con su respectivo borde negro -->
+				<td style="background-color: #e6df7c; border: 1px solid #000000;"> 5° CH 2<br>Juarez<br>AULA 38 </td> <!-- Clase del Miércoles con su respectivo borde negro -->
+				<td style="background-color: #939633; border: 1px solid #000000;"> 5° Ingles 5<br>Terrazas<br>AULA 38 </td> <!-- Clase del Jueves con su respectivo borde negro -->
+				<td style="background-color: #e6df7c; border: 1px solid #000000;"> 5° CH 2<br>Juarez<br>AULA 38 </td> <!-- Clase del Viernes con su respectivo borde negro -->
+			</tr> <!-- Cierre de la fila de las 8:00-9:00 -->
+			
+			<!-- Fila del horario: 9:00-10:00 -->
+			<tr> <!-- Inicia la tercera fila de clases -->
+				<td style="font-weight: bold; border: 1px solid #000000;"> 9:00<br>10:00 </td> <!-- Celda de la hora con borde negro -->
+				<td style="background-color: #939633; border: 1px solid #000000;"> 5° Ingles 5<br>Terrazas<br>AULA 38 </td> <!-- Clase del Lunes con borde negro -->
+				<td style="background-color: #ff7f27; border: 1px solid #000000;" rowspan="2"> PROG M4S1<br>Meza<br>AULA 38 </td> <!-- Clase del Martes: se expande hacia abajo ocupando 2 filas (rowspan="2") -->
+				<td style="background-color: #ff7f27; border: 1px solid #000000;"> PROG M4S1<br>Meza<br>AULA 38 </td> <!-- Clase del Miércoles con borde negro -->
+				<td style="background-color: #ff7f27; border: 1px solid #000000;" rowspan="2"> PROG M4S1<br>Meza<br>AULA 38 </td> <!-- Clase del Jueves: se expande hacia abajo ocupando 2 filas (rowspan="2") -->
+				<td style="background-color: #ff7f27; border: 1px solid #000000;" rowspan="2"> PROG M4S1<br>Meza<br>AULA 38 </td> <!-- Clase del Viernes: se expande hacia abajo ocupando 2 filas (rowspan="2") -->
+			</tr> <!-- Cierre de la fila de las 9:00-10:00 -->
+			
+			<!-- Fila del horario: 10:00-10:50 -->
+			<tr> <!-- Inicia la cuarta fila de clases -->
+				<td style="font-weight: bold; border: 1px solid #000000;"> 10:00<br>10:50 </td> <!-- Celda de la hora con borde negro -->
+				<td style="background-color: #aae344; border: 1px solid #000000;"> 5° CNEyT 5<br>Reyes<br>AULA 38 </td> <!-- Clase del Lunes con borde negro -->
+				<!-- Nota: La celda de este Martes no se escribe porque la ocupó la materia de la hora anterior con rowspan -->
+				<td style="background-color: #939633; border: 1px solid #000000;"> 5° Ingles 5<br>Terrazas<br>AULA 38 </td> <!-- Clase del Miércoles con borde negro -->
+				<!-- Nota: Las celdas de Jueves y Viernes no se escriben porque las ocupó la materia anterior con rowspan -->
+			</tr> <!-- Cierre de la fila de las 10:00-10:50 -->
+			
+			<!-- RECESO -->
+			<tr> <!-- Inicia la fila especial asignada para el receso estudiantil -->
+				<td colspan="6" style="background-color: #ffffff; height: 18px; border: 1px solid #000000;"> </td> <!-- Celda única que se estira a lo largo de las 6 columnas (colspan="6") para hacer el espacio en blanco -->
+			</tr> <!-- Cierre de la fila del receso -->
 
-			<!-- 11:10-12:00 -->
-			<tr>
-				<td style="font-weight: bold; background-color: #f2f2f2;"> 11:10<br>12:00 </td> 
-				<td style="background-color: #a6a6a6;"> PROG M4S2<br>Gonzales A<br>AULA 38 </td> 
-				<td style="background-color: #a6a6a6;"> PROG M4S2<br>Gonzales A<br>AULA 38 </td> 
-				<td style="background-color: #aae344;" rowspan="2"> 5° CNEyT 5<br>Reyes<br>AULA 38 </td> 
-				<td style="background-color: #a6a6a6;" rowspan="2"> PROG M4S2<br>Gonzales A<br>AULA 38 </td> 
-				<td style="background-color: #aae344;"> 5° CNEyT 5<br>Reyes<br>AULA 38 </td> 
-			</tr>
-			<!-- 12:00-1:00 -->
-			<tr>
-				<td style="font-weight: bold; background-color: #f2f2f2;"> 12:00<br>13:00 </td> 
-				<td style="background-color: #b05fe6;"> 5° FS<br>Meza<br>AULA 38 </td> 
-				<td style="background-color: #939633;"> 5° Ingles 5<br>Terrazas<br>AULA 38 </td> 
-				<!-- Miércoles se salta -->
-				<!-- Jueves se salta -->
-				<td style="background-color: #a6a6a6;"> PROG M4S2<br>Gonzales A<br>AULA 38 </td> 
-			</tr>
-			<!-- 1:00-2:00 -->
-			<tr>
-				<td style="font-weight: bold; background-color: #f2f2f2;"> 13:00<br>14:00 </td> 
-				<td style="background-color: #00a83b;"> 5° TSdM 2<br>Macias<br>AULA 38 </td> 
-				<td style="background-color: #00a83b;"> 5° TSdM 2<br>Macias<br>AULA 38 </td> 
-				<td style="background-color: #00a83b;"> 5° TSdM 2<br>Macias<br>AULA 38 </td> 
-				<td style="background-color: #00a83b;"> 5° TSdM 2<br>Macias<br>AULA 38 </td> 
-				<td style="background-color: #00a83b;"> 5° TSdM 2<br>Macias<br>AULA 38 </td> 
-			</tr>
-		</tbody>
-	</table>
-</body>
-</html>
+			<!-- Fila del horario: 11:10-12:00 -->
+			<tr> <!-- Inicia la quinta fila de clases (post-receso) -->
+				<td style="font-weight: bold; border: 1px solid #000000;"> 11:10<br>12:00 </td> <!-- Celda de la hora con borde negro -->
+				<td style="background-color: #a6a6a6; border: 1px solid #000000;"> PROG M4S2<br>Gonzales A<br>AULA 38 </td> <!-- Clase del Lunes con borde negro -->
+				<td style="background-color: #a6a6a6; border: 1px solid #000000;"> PROG M4S2<br>Gonzales A<br>AULA 38 </td> <!-- Clase del Martes con borde negro -->
+				<td style="background-color: #aae344; border: 1px solid #000000;" rowspan="2"> 5° CNEyT 5<br>Reyes<br>AULA 38 </td> <!-- Clase del Miércoles: se expande hacia abajo 2 filas (rowspan="2") -->
+				<td style="background-color: #a6a6a6; border: 1px solid #000000;" rowspan="2"> PROG M4S2<br>Gonzales A<br>AULA 38 </td> <!-- Clase del Jueves: se expande hacia abajo 2 filas (rowspan="2") -->
+				<td style="background-color: #aae344; border: 1px solid #000000;"> 5° CNEyT 5<br>Reyes<br>AULA 38 </td> <!-- Clase del Viernes con borde negro -->
+			</tr> <!-- Cierre de la fila de las 11:10-12:00 -->
+			
+			<!-- Fila del horario: 12:00-1:00 -->
+			<tr> <!-- Inicia la sexta fila de clases -->
+				<td style="font-weight: bold; border: 1px solid #000000;"> 12:00<br>1:00 </td> <!-- Celda de la hora con borde negro -->
+				<td style="background-color: #b05fe6; border: 1px solid #000000;"> 5° FS<br>Meza<br>AULA 38 </td> <!-- Clase del Lunes con borde negro -->
+				<td style="background-color: #939633; border: 1px solid #000000;"> 5° Ingles 5<br>Terrazas<br>AULA 38 </td> <!-- Clase del Martes con borde negro -->
+				<!-- Nota: La celda de este Miércoles no se escribe porque la ocupó la materia de la hora anterior con rowspan -->
+				<!-- Nota: La celda de este Jueves no se escribe porque la ocupó la materia de la hora anterior con rowspan -->
+				<td style="background-color: #a6a6a6; border: 1px solid #000000;"> PROG M4S2<br>Gonzales A<br>AULA 38 </td> <!-- Clase del Viernes con borde negro -->
+			</tr> <!-- Cierre de la fila de las 12:00-1:00 -->
+			
+			<!-- Fila del horario: 1:00-2:00 -->
+			<tr> <!-- Inicia la séptima y última fila de clases -->
+				<td style="font-weight: bold; border: 1px solid #000000;"> 1:00<br>2:00 </td> <!-- Celda de la hora con borde negro -->
+				<td style="background-color: #00a83b; border: 1px solid #000000;"> 5° TSdM 2<br>Macias<br>AULA 38 </td> <!-- Clase del Lunes con borde negro -->
+				<td style="background-color: #00a83b; border: 1px solid #000000;"> 5° TSdM 2<br>Macias<br>AULA 38 </td> <!-- Clase del Martes con borde negro -->
+				<td style="background-color: #00a83b; border: 1px solid #000000;"> 5° TSdM 2<br>Macias<br>AULA 38 </td> <!-- Clase del Miércoles con borde negro -->
+				<td style="background-color: #00a83b; border: 1px solid #000000;"> 5° TSdM 2<br>Macias<br>AULA 38 </td> <!-- Clase del Jueves con borde negro -->
+				<td style="background-color: #00a83b; border: 1px solid #000000;"> 5° TSdM 2<br>Macias<br>AULA 38 </td> <!-- Clase del Viernes con borde negro -->
+			</tr> <!-- Cierre de la fila de las 1:00-2:00 -->
+		<!-- | Castro Chairez Zulay Valentina | 5°J | 0822 | Programacion | -->
+
+		</tbody> <!-- Cierre del cuerpo de la tabla (contiene todos los datos) -->
+	</table> <!-- Cierre de la tabla general (se cierra el contenedor principal del horario) -->
+</body> <!-- Cierre del cuerpo de la página HTML -->
+</html> <!-- Cierre definitivo del documento HTML -->
