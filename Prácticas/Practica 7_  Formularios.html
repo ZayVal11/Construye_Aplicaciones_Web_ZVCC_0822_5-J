@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title> <!-- <title>: Define el título de la página que se muestra en la pestaña del navegador -->
+    <!-- Libreria de iconos en linea -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"> <!-- <link>: Vincula recursos externos como hojas de estilo CSS o librerías -->
+</head>
+<body>
+    <h1>Formularios</h1> <!-- <h1>: Encabezado principal de la página -->
+    <p>Un formulario permite al visitante cargar datos y que sean enviados al servidor.</p> <!-- <p>: Contenedor de párrafo de texto -->
+    <p>El HTML no tiene la responsabilidad de registrar los datos en el servidor,
+    esta actividad se delega a traves de un lenguaje que se ejecute en el servidor (PHP,
+    ASP, ASP.NET, Node, etc.)
+    </p>
+
+    <h2>Ejemplo basico</h2> <!-- <h2>: Encabezado secundario para clasificar secciones -->
+    <form action="" method="post"> <!-- <form>: Agrupa controles de entrada. action=ruta de envío, method=método HTTP (post/get) -->
+        Ingresa tu nombre:
+        <input type="text" name="nombre" size="20"> <!-- <input type="text">: Entrada de texto. name=identificador para backend, size=ancho en caracteres -->
+        <br> <!-- <br>: Inserta un salto de línea en el contenido -->
+        <input type="submit" value="enviar"> <!-- type="submit": Botón que envía los datos del formulario al servidor -->
+    </form>
+
+    <h2>Formulario para contraseñas</h2>
+    <form action="" method="post">
+        Ingresa tu usuario:
+        <input type="text" name="usuario">
+        Ingresa tu contraseña:
+        <input type="password" name="pass"> <!-- type="password": Mascara los caracteres ingresados por privacidad -->
+        <br>
+        <input type="submit" value="enviar">
+        <input type="reset" value="borrar"> <!-- type="reset": Botón que restablece todos los campos a su valor inicial -->
+    </form>
+
+    <h2>Formulario con text area</h2>
+    <form action="" method="post">
+        Ingresa tu nombre:
+        <input type="text" name="nombre">
+        <br>
+        Ingresa tu correo:
+        <input type="email" name="correo"> <!-- type="email": Campo que exige y valida una estructura de correo electrónico -->
+        <br>
+        Ingresa tus comentarios:
+        <textarea name="comentarios" rows="1" cols="10"></textarea> <!-- <textarea>: Campo multilínea para texto largo. rows=filas, cols=columnas -->
+        <br>
+        <input type="submit" value="enviar">
+        <input type="reset" value="borrar">
+    </form>
+
+    <h2>Formularios con checkbox</h2>
+    <form action="" method="post">
+        Ingresa tu nombre:
+        <input type="text" name="nombre">
+        <br>
+        Selecciona los lenguajes que conozcas:
+        <br>
+        <input type="checkbox" name="Java">Java <br> <!-- type="checkbox": Casilla de verificación para selección múltiple -->
+        <input type="checkbox" name="Python"> Python <br>
+        <input type="checkbox" name="C#">C# <br>
+        <input type="checkbox" name="Flutter"> Flutter <br>
+    </form>
+
+    <h2>Formularios con Radioboton</h2>
+    <form action="" method="post">
+        Ingresa tu nombre:
+        <input type="text" name="nombre">
+        <br>
+        Selecciona el maximo de estudios que tienes:
+        <br>
+        <input type="radio" name="estudios" value="1">Sin estudios <br> <!-- type="radio": Selección única. Compartir 'name' agrupa las opciones -->
+        <input type="radio" name="estudios" value="2">Primaria <br>
+        <input type="radio" name="estudios" value="3">Secundaria <br>
+        <input type="radio" name="estudios" value="4">Preparatoria <br>
+        <input type="submit" value="enviar">
+        <input type="reset" value="borrar">
+    </form>
+
+    <h2>Formularios con seleccion</h2>
+    <form action="" method="post">
+        Ingresa tu nombre:
+        <input type="text" name="nombre">
+        <br>
+        Selecciona tu pais:
+        <select name="pais"> <!-- <select>: Menú o lista desplegable de opciones -->
+            <option value="1">Argentina</option> <!-- <option>: Opción individual dentro de una lista <select> -->
+            <option value="2">España</option>
+            <option value="3">Mexico</option>
+            <option value="4">Guatemala</option>
+            <option value="5">Honduras</option>
+            <option value="6">El Salvador</option>
+            <option value="7">Venezuela</option>
+            <option value="8">Colombia</option>
+        </select>
+        <br>
+        <input type="submit" value="enviar">
+        <input type="reset" value="borrar">
+    </form>
+
+    <h2>Formulario con botones</h2>
+    <form action="" method="post">
+        Ingresa tu nombre:
+        <input type="text" name="nombre">
+        <br>
+        <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button> <!-- <button>: Botón interactivo que permite etiquetas internas como íconos (<i>) -->
+        <button type="reset">Borrar <i class="fa fa-trash"></i></button>
+    </form>
+
+    <h2>Formulario con archivos</h2>
+    <form action="" method="post">
+        Ingresa tu nombre:
+        <input type="text" name="nombre">
+        <br>
+        <input type="file" name="archivo"> <!-- type="file": Permite adjuntar y subir archivos desde el dispositivo -->
+        <br>
+        <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
+        <button type="reset">Borrar <i class="fa fa-trash"></i></button>
+    </form>
+
+    <h2>Formulario con campos ocultos</h2>
+    <form action="" method="post">
+        <input type="hidden" name="hora" value="3:30"> <!-- type="hidden": Envía un valor interno al servidor sin mostrarlo en la interfaz -->
+        Ingresa tu nombre:
+        <input type="text" name="nombre">
+        <br>
+        <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
+        <button type="reset">Borrar <i class="fa fa-trash"></i></button>
+    </form>
+
+    <h2>Formularios con agrupamiento</h2>
+    <form action="" method="post">
+        <fieldset> <!-- <fieldset>: Agrupa visualmente secciones del formulario en un recuadro -->
+            <legend>Datos personales</legend> <!-- <legend>: Define el título visual del <fieldset> -->
+            Nombre y apellido:
+            <input type="text" name="nombre_apellido"><br>
+            Documento valido:
+            <input type="file" name="documento"><br>
+            Fecha de nacimiento:
+            <input type="date" name="fecha_nacimiento"> <!-- type="date": Entrada con selector desplegable de calendario -->
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de estudio:</legend>
+            Nombre de la escuela:
+            <input type="text" name="escuela"><br>
+            Certificado valido:
+            <input type="file" name="certificado"><br>
+            Fecha de egreso:
+            <input type="date" name="fecha_egreso">
+        </fieldset>
+        <br>
+        <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
+        <button type="reset">Borrar <i class="fa fa-trash"></i></button>
+    </form>
+
+    <h2>Formulario con limitaciones</h2>
+    <form action="" method="post">
+        Ingresa tu nombre:
+        <input type="text" name="nombre" disabled><br> <!-- disabled: Deshabilita el campo impidiendo escribir o enviar sus datos -->
+        Contraseña:
+        <input type="password" name="pass" maxlength="5"><br> <!-- maxlength: Restringe el número máximo de caracteres permitidos -->
+        Comentarios:
+        <textarea name="comentarios" readonly> <!-- readonly: Bloquea la modificación del texto pero permite su envío al servidor -->
+
+Este es mi comentario y no se puede borrar
+        </textarea><br>
+    </form>
+</body>
+</html>
