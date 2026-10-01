@@ -1,0 +1,26 @@
+<!DOCTYPE html> <!-- Castro Chairez Zulay Valentina | 5°J | 0822 | Programación -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title> <!-- <title>: Define el título de la página que se muestra en la pestaña del navegador -->
+    <!-- Libreria de iconos en linea -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"> <!-- <link>: Vincula recursos externos -->
+</head>
+<body>
+    <h1>Formularios</h1> <!-- <h1>: Encabezado principal -->
+    <p>Un formulario permite al visitante cargar datos y que sean enviados al servidor.</p> <!-- <p>: Contenedor de texto -->
+    <p>El HTML no tiene la responsabilidad de registrar los datos en el servidor,
+    esta actividad se delega a traves de un lenguaje que se ejecute en el servidor (PHP,
+    ASP, ASP.NET, Node, etc.)
+    </p>
+
+    <h2>Ejemplo basico</h2> <!-- <h2>: Encabezado secundario para clasificar secciones -->
+    <form action="" method="post"> <!-- <form>: Agrupa controles de entrada. action=ruta de envío, method=método HTTP (post/get) -->
+        Ingresa tu nombre:
+        <input type="text" name="nombre" size="20"> <!-- <input type="text">: Entrada de texto. name=identificador para backend, size=ancho en caracteres -->
+        <br> <!-- <br>: Salto de línea -->
+        <input type="submit" value="enviar"> <!-- type="submit": Botón que envía los datos del formulario al servidor -->
+    </form>
+</body>
+</html>
