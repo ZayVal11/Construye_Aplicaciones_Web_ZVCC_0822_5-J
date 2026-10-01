@@ -1,0 +1,24 @@
+<!DOCTYPE html> <!-- Castro Chairez Zulay Valentina | 5°J | 0822 | Programación -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title> <!-- <title>: Define el título de la página que se muestra en la pestaña del navegador -->
+    <!-- Libreria de iconos en linea -->
+
+    <h1>Formulario con text area</h1>
+    <form action="" method="post"> <!-- <form>: Agrupa controles de entrada. action=ruta de envío, method=método HTTP (post/get) -->
+        Ingresa tu nombre:
+        <input type="text" name="nombre">  <!-- <input type="text">: Entrada de texto. name=identificador para backend, size=ancho en caracteres -->
+        <br>
+        Ingresa tu correo:
+        <input type="email" name="correo"> <!-- type="email": Campo que exige y valida una estructura de correo electrónico -->
+        <br>
+        Ingresa tus comentarios:
+        <textarea name="comentarios" rows="1" cols="10"></textarea> <!-- <textarea>: Campo multilínea para texto largo. rows=filas, cols=columnas -->
+        <br>
+        <input type="submit" value="enviar"> <!-- type="submit": Botón que envía los datos del formulario al servidor -->
+        <input type="reset" value="borrar"> <!-- type="reset": Botón que restablece todos los campos a su valor inicial -->
+    </form>
+</body>
+</html>
