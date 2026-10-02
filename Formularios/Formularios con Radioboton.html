@@ -1,0 +1,25 @@
+<!DOCTYPE html> <!-- Castro Chairez Zulay Valentina | 5°J | 0822 | Programación -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title> <!-- <title>: Define el título de la página que se muestra en la pestaña del navegador -->
+    <!-- Libreria de iconos en linea -->
+</head>
+
+    <h2>Formularios con Radioboton</h2>
+    <form action="" method="post">  <!-- <form>: Agrupa controles de entrada. action=ruta de envío, method=método HTTP (post/get) -->
+        Ingresa tu nombre:
+        <input type="text" name="nombre">  <!--cuadro de entrada donde el usuario puede escribir texto plano-->
+        <br>
+        Selecciona el maximo de estudios que tienes:
+        <br>
+        <input type="radio" name="estudios" value="1">Sin estudios <br> <!-- type="radio": Selección única. Compartir 'name' agrupa las opciones -->
+        <input type="radio" name="estudios" value="2">Primaria <br>
+        <input type="radio" name="estudios" value="3">Secundaria <br>
+        <input type="radio" name="estudios" value="4">Preparatoria <br>
+        <input type="submit" value="enviar">
+        <input type="reset" value="borrar">
+    </form>
+</body>
+</html>
