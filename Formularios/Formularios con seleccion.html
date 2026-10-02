@@ -1,0 +1,31 @@
+<!DOCTYPE html> <!-- Castro Chairez Zulay Valentina | 5°J | 0822 | Programación -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title> <!-- <title>: Define el título de la página que se muestra en la pestaña del navegador -->
+    <!-- Libreria de iconos en linea -->
+</head>
+
+    <h2>Formularios con seleccion</h2>
+    <form action="" method="post">  <!-- <form>: Agrupa controles de entrada. action=ruta de envío, method=método HTTP (post/get) -->
+        Ingresa tu nombre:
+        <input type="text" name="nombre"> <!--cuadro de entrada donde el usuario puede escribir texto plano-->
+        <br>
+        Selecciona tu pais:
+        <select name="pais"> <!-- <select>: Menú o lista desplegable de opciones -->
+            <option value="1">Argentina</option> <!-- <option>: Opción individual dentro de una lista <select> -->
+            <option value="2">España</option>
+            <option value="3">Mexico</option>
+            <option value="4">Guatemala</option>
+            <option value="5">Honduras</option>
+            <option value="6">El Salvador</option>
+            <option value="7">Venezuela</option>
+            <option value="8">Colombia</option>
+        </select>
+        <br>
+        <input type="submit" value="enviar">
+        <input type="reset" value="borrar">
+    </form>
+</body>
+</html>
