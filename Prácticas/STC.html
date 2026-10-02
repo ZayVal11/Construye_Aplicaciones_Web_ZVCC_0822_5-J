@@ -1,0 +1,289 @@
+<!-- | Castro Chairez Zulay Valentina | 5°J | 0822 | Programación |-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte Técnico - Reparación de Equipos</title>
+    <style>
+        /* Estilos para la barra de navegación */
+        nav {
+            background-color: #87CEEB; /* Azul claro */
+            padding: 15px 20px;
+        }
+
+        /* Quitar viñetas de la lista y alinear horizontalmente */
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 60px; /* Espacio entre las opciones */
+        }
+
+        /* Estilo de los enlaces */
+        nav a {
+            color: #333333; /* Color de texto oscuro para buen contraste */
+            text-decoration: none; /* Quita el subrayado */
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Efecto al pasar el mouse sobre los enlaces */
+        nav a:hover {
+            color: #ffffff; /* Cambia a blanco al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Tu barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <hr>
+
+    <!-- Sección Inicio -->
+    <section id="inicio">
+        <h1>Soporte Técnico Profesional</h1>
+        <p>Bienvenido a nuestro centro de soporte técnico. Nos especializamos en el mantenimiento y reparación de tus equipos electrónicos para mantenerlos en óptimas condiciones de funcionamiento.</p>
+        
+        <!-- Espacio para imagen de Inicio -->
+        <img src="" alt="Imagen de presentación / Taller de soporte técnico">
+    </section>
+
+    <hr>
+
+    <!-- Sección Servicios (Qué se repara) -->
+    <section id="servicios">
+        <h2>Servicios de Reparación</h2>
+
+        <!-- Computadora -->
+        <div>
+            <h3>Computadoras</h3>
+            <p>Reparación de fallas de encendido, eliminación de virus, formateo, cambio de piezas y mantenimiento general.</p>
+            <!-- Espacio para imagen de Computadora -->
+            <img src="" alt="Imagen de Computadora">
+        </div>
+        <!-- Formulario -->
+        <form action="#" method="POST">
+            <div>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <br>
+            <div>
+                <label for="telefono">Teléfono / WhatsApp:</label><br>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <br>
+            <div>
+                <label for="equipo">Selecciona el equipo:</label><br>
+                <select id="equipo" name="equipo" required>
+                    <option value="">--Seleccionar--</option>
+                    <option value="computadora">Computadora</option>
+                    <option value="impresora">Impresora</option>
+                    <option value="monitor">Monitor</option>
+                    <option value="audifonos">Audífonos</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="servicio">Servicio requerido:</label><br>
+                <select id="servicio" name="servicio" required>
+                    <option value="">--Seleccionar--</option>
+                    <option value="reparacion">Reparación</option>
+                    <option value="mantenimiento">Mantenimiento</option>
+                    <option value="cotizacion">Consulta / Cotización</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="mensaje">Descripción de la falla:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="40" required></textarea>
+            </div>
+            <br>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+
+        <!-- Impresora -->
+        <div>
+            <h3>Impresoras</h3>
+            <p>Solución a atascos de papel, limpieza de cabezales, recarga de tinta/tóner y configuración en red.</p>
+            <!-- Espacio para imagen de Impresora -->
+            <img src="" alt="Imagen de Impresora">
+        </div>
+        <!-- Formulario -->
+        <form action="#" method="POST">
+            <div>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <br>
+            <div>
+                <label for="telefono">Teléfono / WhatsApp:</label><br>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <br>
+            <div>
+                <label for="equipo">Selecciona el equipo:</label><br>
+                <select id="equipo" name="equipo" required>
+                    <option value="">--Seleccionar--</option>
+                    <option value="computadora">Computadora</option>
+                    <option value="impresora">Impresora</option>
+                    <option value="monitor">Monitor</option>
+                    <option value="audifonos">Audífonos</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="servicio">Servicio requerido:</label><br>
+                <select id="servicio" name="servicio" required>
+                    <option value="">--Seleccionar--</option>
+                    <option value="reparacion">Reparación</option>
+                    <option value="mantenimiento">Mantenimiento</option>
+                    <option value="cotizacion">Consulta / Cotización</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="mensaje">Descripción de la falla:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="40" required></textarea>
+            </div>
+            <br>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+
+        <!-- Monitor -->
+        <div>
+            <h3>Monitores</h3>
+            <p>Reparación de encendido, parpadeo de imagen, problemas de fuente de poder y cambio de puertos dañados.</p>
+            <!-- Espacio para imagen de Monitor -->
+            <img src="" alt="Imagen de Monitor">
+        </div>
+        <!-- Formulario -->
+        <form action="#" method="POST">
+            <div>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <br>
+            <div>
+                <label for="telefono">Teléfono / WhatsApp:</label><br>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <br>
+            <div>
+                <label for="equipo">Selecciona el equipo:</label><br>
+                <select id="equipo" name="equipo" required>
+                    <option value="">--Seleccionar--</option>
+                    <option value="computadora">Computadora</option>
+                    <option value="impresora">Impresora</option>
+                    <option value="monitor">Monitor</option>
+                    <option value="audifonos">Audífonos</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="servicio">Servicio requerido:</label><br>
+                <select id="servicio" name="servicio" required>
+                    <option value="">--Seleccionar--</option>
+                    <option value="reparacion">Reparación</option>
+                    <option value="mantenimiento">Mantenimiento</option>
+                    <option value="cotizacion">Consulta / Cotización</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="mensaje">Descripción de la falla:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="40" required></textarea>
+            </div>
+            <br>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+
+        <!-- Audífonos -->
+        <div>
+            <h3>Audífonos</h3>
+            <p>Reparación de falsos contactos, cambio de cable o conector (Jack/USB), fallas Bluetooth y cambio de piezas.</p>
+            <!-- Espacio para imagen de Audífonos -->
+            <img src="" alt="Imagen de Audífonos">
+        </div>
+        <!-- Formulario -->
+        <form action="#" method="POST">
+            <div>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <br>
+            <div>
+                <label for="telefono">Teléfono / WhatsApp:</label><br>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <br>
+            <div>
+                <label for="equipo">Selecciona el equipo:</label><br>
+                <select id="equipo" name="equipo" required>
+                    <option value="">--Seleccionar--</option>
+                    <option value="computadora">Computadora</option>
+                    <option value="impresora">Impresora</option>
+                    <option value="monitor">Monitor</option>
+                    <option value="audifonos">Audífonos</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="servicio">Servicio requerido:</label><br>
+                <select id="servicio" name="servicio" required>
+                    <option value="">--Seleccionar--</option>
+                    <option value="reparacion">Reparación</option>
+                    <option value="mantenimiento">Mantenimiento</option>
+                    <option value="cotizacion">Consulta / Cotización</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="mensaje">Descripción de la falla:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="40" required></textarea>
+            </div>
+            <br>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+
+    </section>
+
+    <hr>
+
+    <!-- Sección Productos -->
+    <section id="productos">
+        <h2>Productos</h2>
+        <p>Contamos con venta de repuestos, componentes y accesorios para tus equipos.</p>
+    </section>
+
+    <hr>
+
+    <!-- Sección Contacto y Formulario -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        
+        <!-- Información directa -->
+        <div>
+            <p><strong>Teléfono / WhatsApp:</strong> +123 456 7890</p>
+            <p><strong>Correo electrónico:</strong> contacto@soportetecnico.com</p>
+            <p><strong>Horario de atención:</strong> Lunes a Viernes de 9:00 am a 6:00 pm</p>
+        </div>
+
+        <h3>Solicita tu Servicio</h3>
+        
+
+    </section>
+
+</body>
+</html>
