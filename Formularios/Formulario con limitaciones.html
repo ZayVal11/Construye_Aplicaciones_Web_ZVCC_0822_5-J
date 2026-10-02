@@ -1,0 +1,22 @@
+<!DOCTYPE html> <!-- Castro Chairez Zulay Valentina | 5°J | 0822 | Programación -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title> <!-- <title>: Define el título de la página que se muestra en la pestaña del navegador -->
+    <!-- Libreria de iconos en linea -->
+</head>
+ 
+   <h2>Formulario con limitaciones</h2>
+    <form action="" method="post">  <!-- <form>: Agrupa controles de entrada. action=ruta de envío, method=método HTTP (post/get) -->
+        Ingresa tu nombre:
+        <input type="text" name="nombre" disabled><br> <!-- disabled: Deshabilita el campo impidiendo escribir o enviar sus datos -->
+        Contraseña:
+        <input type="password" name="pass" maxlength="5"><br> <!-- maxlength: Restringe el número máximo de caracteres permitidos -->
+        Comentarios:
+        <textarea name="comentarios" readonly> <!-- readonly: Bloquea la modificación del texto pero permite su envío al servidor -->
+
+        </textarea><br>
+    </form>
+</body>
+</html>
