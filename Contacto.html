@@ -1,0 +1,100 @@
+<!-- Castro Chairez Zulay Valentina | 5°J | 0822 | Programación -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte Técnico - Contacto</title>
+    <style>
+        body {
+            background-color: #557aa5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #91d4ee;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 40px;
+        }
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p><strong>Teléfono:</strong> +123 456 7890</p>
+        <p><strong>Correo:</strong> @soportetecnico.com</p>
+        <p><strong>Horario:</strong> Lunes - Viernes de 9:00 am a 6:00 pm</p>
+
+        <br>
+        <h3>Buzón de Comentarios, Críticas y Sugerencias</h3>
+        <p>Tu opinión nos ayuda a mejorar nuestros servicios. Déjanos tus comentarios:</p>
+        
+        <form action="#" method="POST">
+            <div>
+                <label for="nombre_contacto">Nombre completo:</label><br>
+                <input type="text" id="nombre_contacto" name="nombre_contacto" required>
+            </div>
+            <br>
+            <div>
+                <label for="correo_contacto">Correo electrónico:</label><br>
+                <input type="email" id="correo_contacto" name="correo_contacto" required>
+            </div>
+            <br>
+            <div>
+                <label for="tipo_comentario">Tipo de mensaje:</label><br>
+                <select id="tipo_comentario" name="tipo_comentario" required>
+                    <option value="">--Seleccionar--</option>
+                    <option value="comentario">Comentario general</option>
+                    <option value="critica">Crítica / Queja sobre el servicio</option>
+                    <option value="sugerencia">Sugerencia de mejora</option>
+                    <option value="felicitacion">Felicitación</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="valoracion">Calificación de nuestro servicio:</label><br>
+                <select id="valoracion" name="valoracion">
+                    <option value="5">Excelente(5 estrellas)</option>
+                    <option value="4">Bueno(4 estrellas)</option>
+                    <option value="3">Regular(3 estrellas)</option>
+                    <option value="2">Malo(2 estrellas)</option>
+                    <option value="1">Pésimo(1 estrella)</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="mensaje_contacto">Comentario o Crítica:</label><br>
+                <textarea id="mensaje_contacto" name="mensaje_contacto" rows="5" cols="40" placeholder="Escribe aquí tu opinión o experiencia con el servicio..." required></textarea>
+            </div>
+            <br>
+            <button type="submit">Enviar Comentario</button>
+        </form>
+    </section>
+
+</body>
+</html>
