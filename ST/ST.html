@@ -1,0 +1,352 @@
+<!-- Castro Chairez Zulay Valentina | 5°J | 0822 | Programación -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte Técnico - Reparación de Equipos</title>
+
+    <!-- Seccion de estilo -->
+    <style>
+        /* Estilos generales del cuerpo de la página */
+        body {
+            background-color: #557aa5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos del menú de navegación fijo/pegado arriba */
+        nav {
+            background-color: #91d4ee;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Estilos para la lista del menú de navegación */
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 40px;
+        }
+
+        /* Estilos para los enlaces del menú */
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Espaciado interno para todas las secciones principales */
+        section {
+            padding: 20px;
+        }
+
+        /* Formato y alineación de las imágenes */
+        img {
+            display: block;
+            margin: 15px auto;
+            max-width: 300px;
+            height: auto;
+        }
+
+        /* Estilo de las líneas divisorias entre secciones */
+        hr {
+            margin: 30px 0;
+            border: 1px solid #81caee;
+        }
+
+        /* Estilos del pie de página */
+        footer {
+            background-color: #3769aee2;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegacion -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Inicio -->
+    <section id="inicio">
+        <h1>Soporte Técnico Profesional</h1>
+        <p>Bienvenido a nuestro centro de soporte técnico. Nos especializamos en el mantenimiento y reparación de tus equipos electrónicos.</p>
+        
+        <h3>¿Por qué elegirnos?</h3>
+        <ul>
+            <li>Diagnóstico inicial completo.</li>
+            <li>Garantía por escrito en repuestos.</li>
+            <li>Atención rápida y personalizada.</li>
+        </ul>
+
+        <img src="pres.jpeg" alt="pres">
+    </section>
+
+    <hr>
+
+    <!-- Servicios -->
+    <section id="servicios">
+        <h2>Servicios de Reparación</h2>
+
+        <!-- Subsección: Reparación de Computadoras -->
+        <div>
+            <h3>Computadoras</h3>
+            <p>Reparación de fallas de encendido, eliminación de virus, formateo y cambio de piezas (SSD, RAM).</p>
+            <img src="com.jpeg" alt="com">
+        </div>
+        <!-- Formulario de solicitud para Computadoras -->
+        <form action="#" method="POST">
+            <div>
+                <label for="nombre1">Nombre:</label><br>
+                <input type="text" id="nombre1" name="nombre" required>
+            </div>
+            <br>
+            <div>
+                <label for="telefono1">Teléfono / WhatsApp:</label><br>
+                <input type="tel" id="telefono1" name="telefono" required>
+            </div>
+            <br>
+            <div>
+                <label for="tipo_pc">Tipo de equipo:</label><br>
+                <select id="tipo_pc" name="tipo_pc" required>
+                    <option value="">--Seleccionar--</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="escritorio">Escritorio</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="falla_pc">Selecciona la falla:</label><br>
+                <select id="falla_pc" name="falla_pc" required>
+                    <option value="">--Seleccionar Falla--</option>
+                    <option value="no_enciende">No enciende</option>
+                    <option value="lenta">Equipo muy lento</option>
+                    <option value="pantalla_azul">Pantalla azul / Errores</option>
+                    <option value="virus">Infección por virus</option>
+                    <option value="otro">Otra falla</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="mensaje1">Descripción detallada de la falla:</label><br>
+                <textarea id="mensaje1" name="mensaje" rows="4" cols="40" required></textarea>
+            </div>
+            <br>
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+
+        <br><hr><br>
+
+        <!-- Subsección: Reparación de Impresoras -->
+        <div>
+            <h3>Impresoras</h3>
+            <p>Atascos de papel, limpieza de cabezales, recarga de tinta/tóner y configuración en red.</p>
+            <img src="imp.jpeg" alt="imp">
+        </div>
+        <!-- Formulario de solicitud para Impresoras -->
+        <form action="#" method="POST">
+            <div>
+                <label for="nombre2">Nombre:</label><br>
+                <input type="text" id="nombre2" name="nombre" required>
+            </div>
+            <br>
+            <div>
+                <label for="telefono2">Teléfono / WhatsApp:</label><br>
+                <input type="tel" id="telefono2" name="telefono" required>
+            </div>
+            <br>
+            <div>
+                <label for="marca_impresora">Marca y Modelo:</label><br>
+                <input type="text" id="marca_impresora" name="marca_impresora" placeholder="Ej. Epson L3150" required>
+            </div>
+            <br>
+            <div>
+                <label for="falla_impresora">Selecciona la falla:</label><br>
+                <select id="falla_impresora" name="falla_impresora" required>
+                    <option value="">--Seleccionar Falla--</option>
+                    <option value="atasco">Atasco de papel</option>
+                    <option value="impresion_borrosa">Impresión borrosa / Malos colores</option>
+                    <option value="sin_tinta">No reconoce cartucho / tóner</option>
+                    <option value="conexion">No conecta por Wi-Fi</option>
+                    <option value="otro">Otra falla</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="mensaje2">Descripción detallada de la falla:</label><br>
+                <textarea id="mensaje2" name="mensaje" rows="4" cols="40" required></textarea>
+            </div>
+            <br>
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+
+        <br><hr><br>
+
+        <!-- Subsección: Reparación de Monitores -->
+        <div>
+            <h3>Monitores</h3>
+            <p>Reparación de encendido, parpadeo de pantalla y cambio de puertos HDMI/VGA dañados.</p>
+            <img src="mon.jpeg" alt="mon">
+        </div>
+        <!-- Formulario de solicitud para Monitores -->
+        <form action="#" method="POST">
+            <div>
+                <label for="nombre3">Nombre:</label><br>
+                <input type="text" id="nombre3" name="nombre" required>
+            </div>
+            <br>
+            <div>
+                <label for="telefono3">Teléfono / WhatsApp:</label><br>
+                <input type="tel" id="telefono3" name="telefono" required>
+            </div>
+            <br>
+            <div>
+                <label for="falla_pantalla">Selecciona la falla:</label><br>
+                <select id="falla_pantalla" name="falla_pantalla" required>
+                    <option value="">--Seleccionar Falla--</option>
+                    <option value="no_enciende">No enciende</option>
+                    <option value="parpadeo">Parpadea la pantalla</option>
+                    <option value="sin_imagen">Enciende pero no da imagen</option>
+                    <option value="puerto_roto">Puerto HDMI/VGA roto</option>
+                    <option value="otro">Otra falla</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="mensaje3">Descripción detallada de la falla:</label><br>
+                <textarea id="mensaje3" name="mensaje" rows="4" cols="40" required></textarea>
+            </div>
+            <br>
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+
+        <br><hr><br>
+
+        <!-- Subsección: Reparación de Audífonos -->
+        <div>
+            <h3>Audífonos</h3>
+            <p>Reparación de falsos contactos en cables, soldaduras Jack/USB y fallas Bluetooth.</p>
+            <img src="aud.jpeg" alt="aud">
+        </div>
+        <!-- Formulario de solicitud para Audífonos -->
+        <form action="#" method="POST">
+            <div>
+                <label for="nombre4">Nombre:</label><br>
+                <input type="text" id="nombre4" name="nombre" required>
+            </div>
+            <br>
+            <div>
+                <label for="telefono4">Teléfono / WhatsApp:</label><br>
+                <input type="tel" id="telefono4" name="telefono" required>
+            </div>
+            <br>
+            <div>
+                <label for="conexion_audifonos">Conexión:</label><br>
+                <select id="conexion_audifonos" name="conexion_audifonos" required>
+                    <option value="">--Seleccionar--</option>
+                    <option value="bluetooth">Bluetooth</option>
+                    <option value="jack">Cable Jack 3.5mm</option>
+                    <option value="usb">USB</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="falla_audifonos">Selecciona la falla:</label><br>
+                <select id="falla_audifonos" name="falla_audifonos" required>
+                    <option value="">--Seleccionar Falla--</option>
+                    <option value="un_lado">Solo se escucha un lado</option>
+                    <option value="falso">Falso contacto al mover cable</option>
+                    <option value="microfono">No funciona el micrófono</option>
+                    <option value="bateria">No carga / Batería agotada</option>
+                    <option value="otro">Otra falla</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="mensaje4">Descripción detallada de la falla:</label><br>
+                <textarea id="mensaje4" name="mensaje" rows="4" cols="40" required></textarea>
+            </div>
+            <br>
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+
+    </section>
+
+    <hr>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <!-- Información de contacto directa -->
+        <h2>Contacto</h2>
+        <p><strong>Teléfono:</strong> +123 456 7890</p>
+        <p><strong>Correo:</strong> @soportetecnico.com</p>
+        <p><strong>Horario:</strong> Lunes - Viernes de 9:00 am a 6:00 pm</p>
+
+        <br>
+        <!-- Formulario de buzón de opiniones, comentarios y críticas -->
+        <h3>Buzón de Comentarios, Críticas y Sugerencias</h3>
+        <p>Tu opinión nos ayuda a mejorar nuestros servicios. Déjanos tus comentarios:</p>
+        
+        <form action="#" method="POST">
+            <div>
+                <label for="nombre_contacto">Nombre completo:</label><br>
+                <input type="text" id="nombre_contacto" name="nombre_contacto" required>
+            </div>
+            <br>
+            <div>
+                <label for="correo_contacto">Correo electrónico:</label><br>
+                <input type="email" id="correo_contacto" name="correo_contacto" required>
+            </div>
+            <br>
+            <div>
+                <label for="tipo_comentario">Tipo de mensaje:</label><br>
+                <select id="tipo_comentario" name="tipo_comentario" required>
+                    <option value="">--Seleccionar--</option>
+                    <option value="comentario">Comentario general</option>
+                    <option value="critica">Crítica / Queja sobre el servicio</option>
+                    <option value="sugerencia">Sugerencia de mejora</option>
+                    <option value="felicitacion">Felicitación</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="valoracion">Calificación de nuestro servicio:</label><br>
+                <select id="valoracion" name="valoracion">
+                    <option value="5">Excelente(5 estrellas)</option>
+                    <option value="4">Bueno(4 estrellas)</option>
+                    <option value="3">Regular(3 estrellas)</option>
+                    <option value="2">Malo(2 estrellas)</option>
+                    <option value="1">Pésimo(1 estrella)</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="mensaje_contacto">Comentario o Crítica:</label><br>
+                <textarea id="mensaje_contacto" name="mensaje_contacto" rows="5" cols="40" placeholder="Escribe aquí tu opinión o experiencia con el servicio..." required></textarea>
+            </div>
+            <br>
+            <button type="submit">Enviar Comentario</button>
+        </form>
+    </section>
+
+    <!-- Pie de pagina -->
+    <footer>
+        <p> | Castro Chairez Zulay Valentina | 5°J | 0822 | Programación |</p>
+    </footer>
+
+</body>
+</html>
