@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soporte Técnico - Reparación de Equipos</title>
+
+    <!-- ========================================== -->
+    <!--          SECCIÓN DE ESTILOS (CSS)         -->
+    <!-- ========================================== -->
     <style>
-        /* Color de fondo básico azul grisáceo */
+        /* Estilos generales del cuerpo de la página */
         body {
             background-color: #557aa5;
             font-family: Arial, sans-serif;
@@ -14,7 +18,7 @@
             padding: 0;
         }
 
-        /* Barra de navegación pegada (sticky) que se desplaza con la página */
+        /* Estilos del menú de navegación fijo/pegado arriba */
         nav {
             background-color: #91d4ee;
             padding: 15px;
@@ -23,6 +27,7 @@
             z-index: 1000;
         }
 
+        /* Estilos para la lista del menú de navegación */
         nav ul {
             list-style: none;
             margin: 0;
@@ -31,18 +36,19 @@
             gap: 40px;
         }
 
+        /* Estilos para los enlaces del menú */
         nav a {
             color: #000000;
             text-decoration: none;
             font-weight: bold;
         }
 
-        /* Espaciado para las secciones */
+        /* Espaciado interno para todas las secciones principales */
         section {
             padding: 20px;
         }
 
-        /* Centrar y limitar tamaño de las imágenes */
+        /* Formato y alineación de las imágenes */
         img {
             display: block;
             margin: 15px auto;
@@ -50,13 +56,13 @@
             height: auto;
         }
 
-        /* Separador básico */
+        /* Estilo de las líneas divisorias entre secciones */
         hr {
             margin: 30px 0;
             border: 1px solid #81caee;
         }
 
-        /* Pie de página básico */
+        /* Estilos del pie de página */
         footer {
             background-color: #3769aee2;
             color: rgb(255, 255, 255);
@@ -68,7 +74,9 @@
 </head>
 <body>
 
-    <!-- Navegación pegada arriba que se desplaza -->
+    <!-- ========================================== -->
+    <!--       SECCIÓN DE NAVEGACIÓN (HEADER)       -->
+    <!-- ========================================== -->
     <nav>
         <ul>
             <li><a href="#inicio">Inicio</a></li>
@@ -77,7 +85,9 @@
         </ul>
     </nav>
 
-    <!-- Sección Inicio: Presentación del taller -->
+    <!-- ========================================== -->
+    <!--            SECCIÓN 1: INICIO               -->
+    <!-- ========================================== -->
     <section id="inicio">
         <h1>Soporte Técnico Profesional</h1>
         <p>Bienvenido a nuestro centro de soporte técnico. Nos especializamos en el mantenimiento y reparación de tus equipos electrónicos.</p>
@@ -94,16 +104,19 @@
 
     <hr>
 
-    <!-- Sección Servicios: Catálogo de reparaciones y sus formularios -->
+    <!-- ========================================== -->
+    <!--           SECCIÓN 2: SERVICIOS             -->
+    <!-- ========================================== -->
     <section id="servicios">
         <h2>Servicios de Reparación</h2>
 
-        <!-- Computadoras -->
+        <!-- Subsección: Reparación de Computadoras -->
         <div>
             <h3>Computadoras</h3>
             <p>Reparación de fallas de encendido, eliminación de virus, formateo y cambio de piezas (SSD, RAM).</p>
             <img src="com.jpeg" alt="com">
         </div>
+        <!-- Formulario de solicitud para Computadoras -->
         <form action="#" method="POST">
             <div>
                 <label for="nombre1">Nombre:</label><br>
@@ -146,12 +159,13 @@
 
         <br><hr><br>
 
-        <!-- Impresoras -->
+        <!-- Subsección: Reparación de Impresoras -->
         <div>
             <h3>Impresoras</h3>
             <p>Atascos de papel, limpieza de cabezales, recarga de tinta/tóner y configuración en red.</p>
             <img src="imp.jpeg" alt="imp">
         </div>
+        <!-- Formulario de solicitud para Impresoras -->
         <form action="#" method="POST">
             <div>
                 <label for="nombre2">Nombre:</label><br>
@@ -190,12 +204,13 @@
 
         <br><hr><br>
 
-        <!-- Monitores -->
+        <!-- Subsección: Reparación de Monitores -->
         <div>
             <h3>Monitores</h3>
             <p>Reparación de encendido, parpadeo de pantalla y cambio de puertos HDMI/VGA dañados.</p>
             <img src="mon.jpeg" alt="mon">
         </div>
+        <!-- Formulario de solicitud para Monitores -->
         <form action="#" method="POST">
             <div>
                 <label for="nombre3">Nombre:</label><br>
@@ -229,12 +244,13 @@
 
         <br><hr><br>
 
-        <!-- Audífonos -->
+        <!-- Subsección: Reparación de Audífonos -->
         <div>
             <h3>Audífonos</h3>
             <p>Reparación de falsos contactos en cables, soldaduras Jack/USB y fallas Bluetooth.</p>
             <img src="aud.jpeg" alt="aud">
         </div>
+        <!-- Formulario de solicitud para Audífonos -->
         <form action="#" method="POST">
             <div>
                 <label for="nombre4">Nombre:</label><br>
@@ -280,14 +296,18 @@
 
     <hr>
 
-    <!-- Sección Contacto: Datos y Formulario completo de comentarios, críticas u opinión -->
+    <!-- ========================================== -->
+    <!--           SECCIÓN 3: CONTACTO              -->
+    <!-- ========================================== -->
     <section id="contacto">
+        <!-- Información de contacto directa -->
         <h2>Contacto</h2>
         <p><strong>Teléfono:</strong> +123 456 7890</p>
         <p><strong>Correo:</strong> @soportetecnico.com</p>
         <p><strong>Horario:</strong> Lunes - Viernes de 9:00 am a 6:00 pm</p>
 
         <br>
+        <!-- Formulario de buzón de opiniones, comentarios y críticas -->
         <h3>Buzón de Comentarios, Críticas y Sugerencias</h3>
         <p>Tu opinión nos ayuda a mejorar nuestros servicios. Déjanos tus comentarios:</p>
         
@@ -333,7 +353,9 @@
         </form>
     </section>
 
-    <!-- Pie de página -->
+    <!-- ========================================== -->
+    <!--           SECCIÓN 4: PIE DE PÁGINA         -->
+    <!-- ========================================== -->
     <footer>
         <p> | Castro Chairez Zulay Valentina | 5°J | 0822 | Programación |</p>
     </footer>
